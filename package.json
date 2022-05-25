@@ -1,0 +1,20 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anna8321/ohmyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anna8321/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/anna8321/ohmyfood#readme"
+}
