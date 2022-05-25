@@ -1,0 +1,18 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,IAAI,CAAC;EACH,gBAAgB,EAAE,GAAG;CACtB;;AAED,AAAA,IAAI,CAAC;EAEH,SAAS,EAAE,KAAK;CACjB",
+    "sources": [
+        "main.scss",
+        "utils/_variables.scss",
+        "base/_base.scss",
+        "base/_typography.scss",
+        "components/_buttons.scss",
+        "layout/_header.scss",
+        "layout/_container.scss",
+        "layout/_footer.scss",
+        "pages/_index.scss",
+        "pages/_restaurant.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
