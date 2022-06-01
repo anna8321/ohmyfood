@@ -18,7 +18,7 @@ body {
   font-size: 16px;
 }
 
-button {
+.main_button {
   width: 63%;
   height: 20%;
   border-radius: 25px;
@@ -38,6 +38,62 @@ button {
   border: none;
   -webkit-box-shadow: 0px 1px 3px black;
           box-shadow: 0px 1px 3px black;
+  background: linear-gradient(-12deg, #9356DC, #ff79DA);
+}
+
+.steps_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 85%;
+  height: 28%;
+  border-radius: 18px;
+  border: none;
+  background-color: #f2f2f2;
+  -webkit-box-shadow: 0px 0px 5px grey;
+          box-shadow: 0px 0px 5px grey;
+  position: relative;
+}
+
+.steps_button i {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  width: 10%;
+  font-size: 19px;
+  color: gray;
+}
+
+.steps_button p {
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+.steps_button span {
+  width: 23px;
+  height: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 2px;
+  border-radius: 50%;
+  background: #9356DC;
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  left: -10px;
 }
 
 header {
@@ -154,7 +210,6 @@ footer {
 }
 
 .explore .explore_content {
-  border: 1px solid green;
   width: 85%;
   height: 85%;
   display: -webkit-box;
@@ -171,6 +226,43 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+.process {
+  width: 100%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: white;
+}
+
+.process h2 {
+  margin-left: 15px;
+}
+
+.process .steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80%;
+  width: 100%;
 }
 
 img {

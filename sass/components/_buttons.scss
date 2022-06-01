@@ -1,4 +1,4 @@
-button {
+.main_button {
   width: 63%;
   height: 20%;
   border-radius: 25px;
@@ -11,4 +11,47 @@ button {
   background-color: $colour-primary;
   border: none;
   box-shadow: 0px 1px 3px black;
+  background: linear-gradient(-12deg, #9356DC, #ff79DA);
+}
+
+.steps_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 28%;
+  border-radius: 18px;
+  border: none;
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 5px grey;
+  position: relative;
+
+  i {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    width: 10%;
+    font-size: 19px;
+    color: gray;
+  }
+
+  p {
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  span {
+    width: 23px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 2px;
+    border-radius: 50%;
+    background: #9356DC;
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    left: -10px;
+  }
 }
