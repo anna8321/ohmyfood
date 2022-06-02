@@ -1,8 +1,7 @@
 .main_button {
-  width: 63%;
-  height: 20%;
+  width: 69%;
+  height: 19%;
   border-radius: 25px;
-  margin-top: 15px;
   padding: 15px;
   display: flex;
   justify-content: center;
@@ -11,7 +10,7 @@
   background-color: $colour-primary;
   border: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(-12deg, #9356DC, #ff79DA);
+  background: linear-gradient(-12deg, $colour-primary, $colour-secondary);
 }
 
 .steps_button {

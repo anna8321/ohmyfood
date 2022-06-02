@@ -4,14 +4,22 @@
   display: flex;
   flex-direction: column;
   background-color: white;
-  border: 1px solid red;
   text-decoration: none;
   color: black;
+  border-radius: 10px;
+
+  .card a,
+    .card a:hover,
+    .card a:active,
+    .card a:visited,
+    .card a:focus {
+      text-decoration: none;
+      color: black;
+    }
 
   .card_img {
     width: 100%;
-    height: 80%;
-    border: 1px solid yellow;
+    height: 79%;
     position: relative;
 
 
@@ -19,6 +27,7 @@
       width: 100%;
       height: 190px;
       object-fit: cover;
+      border-radius: 10px 10px 0 0;
     }
 
     p {
@@ -37,8 +46,7 @@
   }
   .card_content {
     width: 95%;
-    height: 30%;
-    border: 1px solid orange;
+    height: 18%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,6 +58,13 @@
     svg {
       width: 20px;
       height: 20px;
+      fill: black;
+      stroke: red;
+      &:hover {
+        fill: $colour-secondary;
+        stroke: none;
+      }
     }
+
   }
 }

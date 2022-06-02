@@ -29,13 +29,20 @@
   }
 
   .explore_content {
-    width: 85%;
-    height: 85%;
+    width: 75%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    h2 {
+      height: 28%;
+    }
+    p {
+      height: 23%;
+    }
   }
 }
 
@@ -70,12 +77,11 @@
   background-color: #f2f2f2;
 
   h2 {
-    height: 5%;
+    height: 3%;
     margin-left: 15px;
   }
   article {
     height: 90%;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
