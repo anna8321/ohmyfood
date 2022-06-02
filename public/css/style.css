@@ -19,6 +19,10 @@ h3 {
 p {
   font-size: 14px; }
 
+@media screen and (min-width: 992px) {
+  h2 {
+    font-size: 24px; } }
+
 .main_button {
   width: 69%;
   height: 19%;
@@ -32,6 +36,10 @@ p {
   border: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   background: linear-gradient(-12deg, #9356DC, #FF79DA); }
+  @media screen and (min-width: 992px) {
+    .main_button {
+      width: 55%;
+      height: 26%; } }
 
 .steps_button {
   display: flex;
@@ -48,6 +56,11 @@ p {
     .steps_button {
       width: 31%;
       height: 34%; } }
+  @media screen and (min-width: 992px) {
+    .steps_button {
+      width: 30%;
+      height: 42%;
+      border-radius: 12px; } }
   .steps_button i {
     position: absolute;
     top: 25px;
@@ -60,6 +73,11 @@ p {
         top: 19px;
         left: 20px;
         font-size: 17px; } }
+    @media screen and (min-width: 992px) {
+      .steps_button i {
+        top: 25px;
+        left: 30px;
+        font-size: 17px; } }
   .steps_button p {
     font-weight: 700;
     font-family: 'Roboto', sans-serif; }
@@ -67,6 +85,9 @@ p {
       .steps_button p {
         padding-left: 20px;
         width: 81%; } }
+    @media screen and (min-width: 992px) {
+      .steps_button p {
+        font-size: 16px; } }
   .steps_button span {
     width: 23px;
     height: 23px;
@@ -89,11 +110,16 @@ p {
   background-color: white;
   text-decoration: none;
   color: black;
-  border-radius: 10px; }
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); }
   @media screen and (min-width: 600px) {
     .card {
       width: 45%;
       height: 42%; } }
+  @media screen and (min-width: 992px) {
+    .card {
+      width: 43%;
+      height: 45%; } }
   .card .card a,
   .card .card a:hover,
   .card .card a:active,
@@ -116,6 +142,9 @@ p {
       @media screen and (min-width: 600px) {
         .card .card_img img {
           height: 130px; } }
+      @media screen and (min-width: 992px) {
+        .card .card_img img {
+          height: 145px; } }
     .card .card_img p {
       width: 22%;
       padding: 5px;
@@ -159,6 +188,9 @@ header {
   header .logo {
     height: 20px;
     width: 100%; }
+    @media screen and (min-width: 992px) {
+      header .logo {
+        height: 25px; } }
 
 .container {
   display: flex;
@@ -194,6 +226,9 @@ footer {
     @media screen and (min-width: 600px) {
       footer svg {
         width: 22%; } }
+    @media screen and (min-width: 992px) {
+      footer svg {
+        width: 18%; } }
   footer .footer_items {
     width: 51%;
     height: 60%; }
@@ -205,6 +240,10 @@ footer {
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap; } }
+    @media screen and (min-width: 992px) {
+      footer .footer_items {
+        height: 40%;
+        width: 46%; } }
     footer .footer_items a {
       display: flex;
       align-items: center;
@@ -235,6 +274,10 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: #f2f2f2; }
+  @media screen and (min-width: 992px) {
+    .explore {
+      height: 240px;
+      justify-content: flex-start; } }
   .explore form {
     width: 100%;
     height: 15%;
@@ -250,6 +293,9 @@ footer {
       @media screen and (min-width: 600px) {
         .explore form #search {
           width: 17%; } }
+      @media screen and (min-width: 992px) {
+        .explore form #search {
+          width: 13%; } }
       .explore form #search::placeholder {
         color: black;
         font-family: 'Roboto', sans-serif; }
@@ -267,10 +313,21 @@ footer {
     @media screen and (min-width: 600px) {
       .explore .explore_content {
         width: 45%; } }
+    @media screen and (min-width: 992px) {
+      .explore .explore_content {
+        width: 48%; } }
     .explore .explore_content h2 {
       height: 28%; }
+      @media screen and (min-width: 992px) {
+        .explore .explore_content h2 {
+          height: 22%;
+          font-size: 24px; } }
     .explore .explore_content p {
       height: 23%; }
+      @media screen and (min-width: 992px) {
+        .explore .explore_content p {
+          height: 22%;
+          font-size: 16px; } }
 
 .process {
   width: 100%;
@@ -329,5 +386,9 @@ footer {
         flex-wrap: wrap;
         height: 82%;
         align-items: flex-start; } }
+    @media screen and (min-width: 992px) {
+      .restaurant_list article {
+        width: 95%;
+        align-self: center; } }
 
 /*# sourceMappingURL=style.css.map */

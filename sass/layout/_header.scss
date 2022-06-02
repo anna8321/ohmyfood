@@ -10,5 +10,9 @@ header {
   .logo {
     height: 20px;
     width: 100%;
+    @include desktop-only {
+      height: 25px;
+    }
   }
+
 }

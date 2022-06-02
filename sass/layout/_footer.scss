@@ -18,6 +18,9 @@ footer {
     @include tablet-only {
       width: 22%;
     }
+    @include desktop-only {
+      width: 18%;
+    }
   }
   .footer_items {
     width: 51%;
@@ -30,6 +33,10 @@ footer {
       align-items: center;
       flex-wrap: wrap;
 
+    }
+    @include desktop-only {
+      height: 40%;
+      width: 46%;
     }
     a {
       display: flex;
