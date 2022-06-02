@@ -145,9 +145,37 @@ main {
   background-color: aliceblue; }
 
 footer {
-  background-color: grey;
-  border: 1px solid red;
-  width: 100%; }
+  width: 100%;
+  height: 215px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #363636;
+  padding-left: 18px; }
+  footer svg {
+    width: 30%;
+    height: 58px;
+    fill: white; }
+  footer .footer_items {
+    width: 51%;
+    height: 60%; }
+    footer .footer_items a {
+      display: flex;
+      align-items: center;
+      height: 20%; }
+      footer .footer_items a a,
+      footer .footer_items a a:hover,
+      footer .footer_items a a:active,
+      footer .footer_items a a:visited,
+      footer .footer_items a a:focus {
+        text-decoration: none;
+        color: white; }
+      footer .footer_items a i {
+        color: white;
+        font-size: 14px;
+        width: 15%; }
+      footer .footer_items a p {
+        color: white; }
 
 .explore {
   width: 100%;
