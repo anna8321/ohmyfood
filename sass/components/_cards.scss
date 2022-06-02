@@ -7,6 +7,10 @@
   text-decoration: none;
   color: black;
   border-radius: 10px;
+  @include tablet-only {
+    width: 45%;
+    height: 42%;
+  }
 
   .card a,
     .card a:hover,
@@ -21,6 +25,9 @@
     width: 100%;
     height: 79%;
     position: relative;
+    @include tablet-only {
+      height: 72%;
+    }
 
 
     img {
@@ -28,6 +35,9 @@
       height: 190px;
       object-fit: cover;
       border-radius: 10px 10px 0 0;
+      @include tablet-only {
+        height: 130px;
+      }
     }
 
     p {
@@ -50,6 +60,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include tablet-only {
+      height: 26%;
+    }
 
     .card_description {
       padding: 2px 10px;

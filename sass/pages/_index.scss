@@ -20,10 +20,17 @@
       background: none;
       width: 35%;
       margin-left: 10px;
+      @include tablet-only {
+          width: 17%;
+      }
+
 
       &::placeholder {
         color: black;
         font-family: 'Roboto', sans-serif;
+      }
+      @include tablet-only {
+        font-size: 15px;
       }
     }
   }
@@ -36,6 +43,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    @include tablet-only {
+      width: 45%;
+    }
 
     h2 {
       height: 28%;
@@ -52,11 +62,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: white;
+  background-color: $colour-white;
+  @include tablet-only {
+    height: 200px;
+    justify-content: flex-end;
+  }
 
   h2 {
     margin-left: 15px;
     height: 15%;
+    @include tablet-only {
+        height: 10%;
+    }
   }
   .steps {
     display: flex;
@@ -65,6 +82,12 @@
     align-items: center;
     height: 60%;
     width: 100%;
+    @include tablet-only {
+      width: 95%;
+      align-self: center;
+      flex-direction: row;
+      height: 80%;
+    }
   }
 }
 
@@ -75,6 +98,10 @@
   flex-direction: column;
   justify-content: center;
   background-color: #f2f2f2;
+  @include tablet-only {
+    height: 550px;
+    justify-content: space-around;
+  }
 
   h2 {
     height: 3%;
@@ -86,5 +113,11 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    @include tablet-only {
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 82%;
+      align-items: flex-start;
+    }
   }
 }
