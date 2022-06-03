@@ -1,0 +1,18 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  @include tablet-only {
+      height: 50px;
+      align-items: center;
+  }
+
+  .logo {
+    height: 20px;
+    width: 100%;
+    @include desktop-only {
+      height: 25px;
+    }
+  }
+
+}

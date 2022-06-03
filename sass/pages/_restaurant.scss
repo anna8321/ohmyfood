@@ -1,0 +1,25 @@
+.menu {
+  .restaurant_name {
+    display: flex;
+    justify-content: space-around;
+    svg {
+        width: 20px;
+        height: 20px;
+        fill: black;
+        stroke: red;
+
+        &:hover {
+          fill: $colour-secondary;
+          stroke: none;
+        }
+      }
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .line {
+      border: 1px solid $colour-tertiary;
+    }
+  }
+}

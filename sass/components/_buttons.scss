@@ -1,0 +1,90 @@
+.main_button {
+  width: 69%;
+  height: 19%;
+  border-radius: 25px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $colour-white;
+  background-color: $colour-primary;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(-12deg, $colour-primary, $colour-secondary);
+  @include desktop-only {
+    width: 55%;
+    height: 26%;
+  }
+}
+
+.steps_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 28%;
+  border-radius: 18px;
+  border: none;
+  background-color: #f2f2f2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+  @include tablet-only {
+      width: 31%;
+      height: 34%;
+  }
+  @include desktop-only {
+    width: 30%;
+    height: 42%;
+    border-radius: 12px;
+  }
+
+  i {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    width: 10%;
+    font-size: 19px;
+    color: gray;
+  @include tablet-only {
+      top: 19px;
+      left: 20px;
+      font-size: 17px;
+    }
+  @include desktop-only {
+    top: 25px;
+    left: 30px;
+    font-size: 17px;
+  }
+  }
+
+  p {
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    @include tablet-only {
+        padding-left: 20px;
+        width: 81%;
+      }
+    @include desktop-only {
+      font-size: 16px;
+    }
+  }
+
+  span {
+    width: 23px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 2px;
+    border-radius: 50%;
+    background: #9356DC;
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    left: -10px;
+  }
+}
+
+.order_button {
+  align-self: center;
+}
