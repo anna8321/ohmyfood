@@ -11,10 +11,10 @@ footer {
     padding-left: 0;
   }
 
-  svg {
+  .logo_footer {
     width: 30%;
     height: 58px;
-    fill: $colour-white;
+    filter: invert(95%) sepia(5%) saturate(18%) hue-rotate(87deg) brightness(104%) contrast(104%);
     @include tablet-only {
       width: 22%;
     }
@@ -22,6 +22,8 @@ footer {
       width: 18%;
     }
   }
+
+
   .footer_items {
     width: 51%;
     height: 60%;

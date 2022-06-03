@@ -244,15 +244,15 @@ footer {
     footer {
       align-items: center;
       padding-left: 0; } }
-  footer svg {
+  footer .logo_footer {
     width: 30%;
     height: 58px;
-    fill: white; }
+    filter: invert(95%) sepia(5%) saturate(18%) hue-rotate(87deg) brightness(104%) contrast(104%); }
     @media screen and (min-width: 600px) {
-      footer svg {
+      footer .logo_footer {
         width: 22%; } }
     @media screen and (min-width: 992px) {
-      footer svg {
+      footer .logo_footer {
         width: 18%; } }
   footer .footer_items {
     width: 51%;
