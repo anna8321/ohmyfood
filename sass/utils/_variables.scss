@@ -3,6 +3,7 @@ $colour-secondary: #FF79DA;
 $colour-tertiary: #99E2D0;
 $colour-black: black;
 $colour-white: white;
+$gradient: linear-gradient(-12deg, $colour-primary, $colour-secondary);
 
 $breakpoints: (
   tablet: 600px,
