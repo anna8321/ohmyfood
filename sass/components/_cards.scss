@@ -138,16 +138,23 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    border: 1px solid red;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    margin: 15px 0;
-    .menu_card_content {
+    border-radius: 10px;
+    margin: 7px 0;
+    padding: 12px 8px;
+
+        .menu_card_content {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      width: 100%;
       .menu_card_description {
         display: flex;
         justify-content: space-between;
+        margin-top: 3px;
+        span {
+          font-size: 15px;
+        }
       }
     }
     .check {

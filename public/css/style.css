@@ -9,6 +9,10 @@
   color: black;
   font-family: 'Roboto', sans-serif; }
 
+h1 {
+  font-family: 'shrikhand', cursive;
+  font-size: 24px; }
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px; }
@@ -22,6 +26,10 @@ p {
 @media screen and (min-width: 992px) {
   h2 {
     font-size: 24px; } }
+
+.menu_title {
+  font-size: 18px;
+  font-weight: 500; }
 
 .main_button {
   width: 69%;
@@ -103,7 +111,8 @@ p {
     left: -10px; }
 
 .order_button {
-  align-self: center; }
+  align-self: center;
+  margin-bottom: 40px; }
 
 .card {
   width: 90%;
@@ -216,19 +225,33 @@ p {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    border: 1px solid red;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    margin: 15px 0; }
+    border-radius: 10px;
+    margin: 7px 0;
+    padding: 12px 8px; }
     .menu_cards .menu_card .menu_card_content {
       display: flex;
       flex-direction: column;
-      justify-content: space-between; }
+      justify-content: space-between;
+      width: 100%; }
       .menu_cards .menu_card .menu_card_content .menu_card_description {
         display: flex;
-        justify-content: space-between; }
+        justify-content: space-between;
+        margin-top: 3px; }
+        .menu_cards .menu_card .menu_card_content .menu_card_description span {
+          font-size: 15px; }
     .menu_cards .menu_card .check {
       display: none; }
 
+.banner {
+  background-image: url(../../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  height: 230px;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  width: 100%; }
+
+/* home */
 header {
   width: 100%;
   display: flex;
@@ -243,6 +266,15 @@ header {
     @media screen and (min-width: 992px) {
       header .logo {
         height: 25px; } }
+
+/* restaurant */
+.header_restaurant {
+  width: 90%;
+  height: 45px;
+  justify-content: flex-start;
+  align-items: center; }
+  .header_restaurant .logo_restaurant {
+    width: 90%; }
 
 .container {
   display: flex;
@@ -443,22 +475,78 @@ footer {
         width: 95%;
         align-self: center; } }
 
-.menu .restaurant_name {
-  display: flex;
-  justify-content: space-around; }
-  .menu .restaurant_name svg {
-    width: 20px;
-    height: 20px;
-    fill: black;
-    stroke: red; }
-    .menu .restaurant_name svg:hover {
-      fill: #FF79DA;
-      stroke: none; }
-.menu article {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-  .menu article .line {
-    border: 1px solid #99E2D0; }
+.main_restaurant {
+  position: relative; }
+  .main_restaurant .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px 30px 0 0;
+    background-color: white;
+    width: 100%;
+    margin-top: 202px;
+    z-index: 1; }
+    .main_restaurant .menu .restaurant_name {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      width: 100%; }
+      .main_restaurant .menu .restaurant_name svg {
+        width: 20px;
+        height: 20px;
+        fill: transparent;
+        stroke: black;
+        stroke-width: 10;
+        overflow: visible; }
+        .main_restaurant .menu .restaurant_name svg:hover {
+          stroke: none;
+          transform-origin: bott;
+          animation: svg_heart 0.4s linear forwards alternate; }
+@keyframes svg_heart {
+  0% {
+    fill: transparent; }
+  15% {
+    fill: #FF79DA;
+    fill-opacity: .2; }
+  35% {
+    fill: #FF79DA;
+    fill-opacity: .5; }
+  55% {
+    fill: #9356DC;
+    fill-opacity: .2; }
+  75% {
+    fill: #9356DC;
+    fill-opacity: .5; }
+  100% {
+    fill: url(#svg_gradient); } }
+    .main_restaurant .menu .article_restaurant {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 92%;
+      margin-bottom: 30px;
+      /* Pop In */
+      /* Slide In */ }
+      .main_restaurant .menu .article_restaurant .animate {
+        /* shorthand version: */
+        animation: animation-name 0.75s cubic-bezier(0.26, 0.53, 0.74, 1.48) 0.5s backwards; }
+      .main_restaurant .menu .article_restaurant .slide {
+        animation-name: animate-slide; }
+@keyframes animate-slide {
+  0% {
+    opacity: 0;
+    transform: translate(0, 40px); }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0); } }
+      .main_restaurant .menu .article_restaurant .delay-13 {
+        animation-delay: 3.9s; }
+      .main_restaurant .menu .article_restaurant .line {
+        width: 40px;
+        height: 0px;
+        border-bottom: 3px solid #99E2D0;
+        padding-top: 5px;
+        margin-bottom: 8px; }
 
 /*# sourceMappingURL=style.css.map */

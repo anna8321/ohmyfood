@@ -1,6 +1,7 @@
-// h1, h2, h3 {
-//   font-family: 'shrikhand', cursive;
-// }
+h1 {
+  font-family: 'shrikhand', cursive;
+  font-size: 24px;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -19,4 +20,9 @@ h2 {
   @include desktop-only {
     font-size: 24px;
   }
+}
+
+.menu_title {
+  font-size: 18px;
+  font-weight: 500;
 }

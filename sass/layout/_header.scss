@@ -1,3 +1,5 @@
+/* home */
+
 header {
   width: 100%;
   display: flex;
@@ -15,4 +17,18 @@ header {
     }
   }
 
+}
+
+/* restaurant */
+
+.header_restaurant {
+  width: 90%;
+  height: 45px;
+  justify-content: flex-start;
+  align-items: center;
+
+
+  .logo_restaurant {
+    width: 90%;
+  }
 }
