@@ -1,25 +1,108 @@
-.menu {
-  .restaurant_name {
-    display: flex;
-    justify-content: space-around;
-    svg {
-        width: 20px;
-        height: 20px;
-        fill: black;
-        stroke: red;
-
-        &:hover {
-          fill: $colour-secondary;
-          stroke: none;
-        }
-      }
-  }
-  article {
+.main_restaurant {
+  position: relative;
+  .menu {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    .line {
-      border: 1px solid $colour-tertiary;
+    align-items: center;
+    border-radius: 30px 30px 0 0;
+    background-color: $colour-white;
+    width: 100%;
+    margin-top: 202px;
+    z-index: 1;
+    .restaurant_name {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      width: 100%;
+      svg {
+        width: 20px;
+        height: 20px;
+        fill: transparent;
+        stroke: black;
+        stroke-width: 10;
+        overflow: visible;
+
+        &:hover {
+          stroke: none;
+          transform-origin: bott;
+          animation: svg_heart 0.4s linear forwards alternate;
+        }
+      }
+    }
+
+    @keyframes svg_heart {
+      0% {
+        fill: transparent;
+      }
+
+      15% {
+        fill: #FF79DA;
+        fill-opacity: .2;
+      }
+
+      35% {
+        fill: #FF79DA;
+        fill-opacity: .5;
+
+      }
+
+      55% {
+        fill: #9356DC;
+        fill-opacity: .2;
+
+      }
+
+          75% {
+            fill: #9356DC;
+            fill-opacity: .5;
+          }
+
+          100% {
+            fill: url(#svg_gradient);
+          }
+        }
+
+    .article_restaurant {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 92%;
+      margin-bottom: 30px;
+      .animate {
+
+          /* shorthand version: */
+          animation: animation-name .75s cubic-bezier(.26, .53, .74, 1.48) .5s backwards;
+        }
+
+        /* Pop In */
+        /* Slide In */
+        .slide {
+          animation-name: animate-slide;
+        }
+
+        @keyframes animate-slide {
+          0% {
+            opacity: 0;
+            transform: translate(0, 40px);
+          }
+
+          100% {
+            opacity: 1;
+            transform: translate(0, 0);
+          }
+        }
+
+        .delay-13 {
+          animation-delay: 3.9s;
+        }
+      .line {
+        width: 40px;
+        height: 0px;
+        border-bottom: 3px solid #99E2D0;
+        padding-top: 5px;
+        margin-bottom: 8px;
+      }
     }
   }
 }

@@ -17,29 +17,32 @@
 
 <body>
   <div class="container">
-    <header>
+    <header class="header_restaurant">
       <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
-      <img class="logo" src="../../assets/images/logo/ohmyfood@2x.svg" alt="logo Ohmyfood">
+      <img class="logo logo_restaurant" src="../../assets/images/logo/ohmyfood@2x.svg" alt="logo Ohmyfood">
     </header>
 
-    <main>
+    <main class="main_restaurant">
       <div class="banner">
-
       </div>
 
       <section class="menu">
         <div class="restaurant_name">
           <h1>La palette du goût</h1>
-          <svg viewBox="0 0 512 512">
+          <svg class="heart_svg" viewBox="0 0 512 512">
             <path
               d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z" />
+            <linearGradient id="svg_gradient">
+              <stop offset="0%" stop-color="#FF79DA" />
+              <stop offset="100%" stop-color="#9356DC" />
+            </linearGradient>
           </svg>
         </div>
-        <article>
-          <h2>ENTREES</h2>
+        <article class="article_restaurant">
+          <h2 class="menu_title">ENTRÉES</h2>
           <div class="line"></div>
           <div class="menu_cards">
-            <div class="menu_card">
+            <div class="menu_card slide animate delay-13">
               <div class="menu_card_content">
                 <h3>Fricassée d'escargot</h3>
                 <div class="menu_card_description">
@@ -51,7 +54,7 @@
               <div class="check"><i class="fa-solid fa-circle-check"></i></div>
             </div>
 
-            <div class="menu_card">
+            <div class="menu_card slide animate delay-13">
               <div class="menu_card_content">
                 <h3>Foie gras de canard mi-cuit</h3>
                 <div class="menu_card_description">
@@ -63,7 +66,7 @@
               <div class="check"><i class="fa-solid fa-circle-check"></i></div>
             </div>
 
-            <div class="menu_card">
+            <div class="menu_card slide animate delay-13">
               <div class="menu_card_content">
                 <h3>Oeuf au plat</h3>
                 <div class="menu_card_description">
@@ -77,11 +80,11 @@
           </div>
         </article>
 
-        <article>
-          <h2>PLATS</h2>
+        <article class="article_restaurant">
+          <h2 class="menu_title">PLATS</h2>
           <div class="line"></div>
           <div class="menu_cards">
-            <div class="menu_card">
+            <div class="menu_card slide animate delay-13">
               <div class="menu_card_content">
                 <h3>Filet de boeuf aux herbes</h3>
                 <div class="menu_card_description">
@@ -93,7 +96,7 @@
               <div class="check"><i class="fa-solid fa-circle-check"></i></div>
             </div>
 
-            <div class="menu_card">
+            <div class="menu_card slide animate delay-13">
               <div class="menu_card_content">
                 <h3>Parmentier de queue de boeuf</h3>
                 <div class="menu_card_description">
@@ -105,7 +108,7 @@
               <div class="check"><i class="fa-solid fa-circle-check"></i></div>
             </div>
 
-            <div class="menu_card">
+            <div class="menu_card slide animate delay-13">
               <div class="menu_card_content">
                 <h3>Filet de turbot</h3>
                 <div class="menu_card_description">
@@ -119,11 +122,11 @@
           </div>
         </article>
 
-        <article>
-          <h2>DESSERTS</h2>
+        <article class="article_restaurant">
+          <h2 class="menu_title">DESSERTS</h2>
           <div class="line"></div>
           <div class="menu_cards">
-            <div class="menu_card">
+            <div class="menu_card slide animate delay-13">
               <div class="menu_card_content">
                 <h3>Paris-Brest</h3>
                 <div class="menu_card_description">
@@ -135,7 +138,7 @@
               <div class="check"><i class="fa-solid fa-circle-check"></i></div>
             </div>
 
-            <div class="menu_card">
+            <div class="menu_card slide animate delay-13">
               <div class="menu_card_content">
                 <h3>Macaron au chocolat d'exception</h3>
                 <div class="menu_card_description">
@@ -146,7 +149,7 @@
 
               <div class="check"><i class="fa-solid fa-circle-check"></i></div>
             </div>
-            <div class="menu_card">
+            <div class="menu_card slide animate delay-13">
               <div class="menu_card_content">
                 <h3>Mousse au chocolat</h3>
                 <div class="menu_card_description">

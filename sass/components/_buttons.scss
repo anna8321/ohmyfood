@@ -7,10 +7,14 @@
   justify-content: center;
   align-items: center;
   color: $colour-white;
-  background-color: $colour-primary;
   border: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   background: linear-gradient(-12deg, $colour-primary, $colour-secondary);
+  &:hover {
+    box-shadow: 0 5px 2px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(-12deg, $colour-primary, $colour-secondary);
+    opacity: 0.4;
+  }
   @include desktop-only {
     width: 55%;
     height: 26%;
@@ -28,6 +32,9 @@
   background-color: #f2f2f2;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   position: relative;
+  &:hover {
+    background-color: $step-button;
+  }
   @include tablet-only {
       width: 31%;
       height: 34%;
@@ -87,4 +94,5 @@
 
 .order_button {
   align-self: center;
+  margin-bottom: 40px;
 }
