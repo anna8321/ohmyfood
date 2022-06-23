@@ -232,21 +232,56 @@ p {
     width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    margin: 7px 0;
-    padding: 12px 8px; }
+    overflow: hidden;
+    position: relative; }
+    .menu_cards .menu_card:hover .check {
+      transform: translate(-120%);
+      background-color: #99E2D0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0 10px 10px 0;
+      width: 55px;
+      height: 100%; }
+      .menu_cards .menu_card:hover .check i {
+        color: white;
+        font-size: 20px;
+        transform: rotate(360deg);
+        transition: transform 0.6s ease-in-out;
+        position: absolute;
+        left: 15px; }
     .menu_cards .menu_card .menu_card_content {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      width: 100%; }
+      width: 100%;
+      border-radius: 0 10px 10px 0;
+      height: 100%;
+      padding: 5px 10px; }
+      .menu_cards .menu_card .menu_card_content p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
       .menu_cards .menu_card .menu_card_content .menu_card_description {
         display: flex;
         justify-content: space-between;
         margin-top: 3px; }
         .menu_cards .menu_card .menu_card_content .menu_card_description span {
-          font-size: 15px; }
+          font-size: 15px;
+          transform: translate(0);
+          transition: transform 1s;
+          background-color: white; }
+        .menu_cards .menu_card .menu_card_content .menu_card_description:hover span {
+          transform: translate(-200%);
+          background-color: white; }
     .menu_cards .menu_card .check {
-      display: none; }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translate(0);
+      transition: transform 1s;
+      position: absolute;
+      right: -72px; }
 
 .banner {
   background-image: url(../../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -601,11 +636,8 @@ footer {
       flex-direction: column;
       justify-content: space-between;
       width: 92%;
-      margin-bottom: 30px;
-      /* Pop In */
-      /* Slide In */ }
+      margin-bottom: 30px; }
       .main_restaurant .menu .article_restaurant .animate {
-        /* shorthand version: */
         animation: animation-name 0.75s cubic-bezier(0.26, 0.53, 0.74, 1.48) 0.5s backwards; }
       .main_restaurant .menu .article_restaurant .slide {
         animation-name: animate-slide; }
@@ -617,7 +649,7 @@ footer {
     opacity: 1;
     transform: translate(0, 0); } }
       .main_restaurant .menu .article_restaurant .delay-13 {
-        animation-delay: 3.9s; }
+        animation-delay: 0.9s; }
       .main_restaurant .menu .article_restaurant .line {
         width: 40px;
         height: 0px;
