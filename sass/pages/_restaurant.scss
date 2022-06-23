@@ -1,5 +1,6 @@
 .main_restaurant {
   position: relative;
+
   .menu {
     display: flex;
     flex-direction: column;
@@ -9,22 +10,24 @@
     width: 100%;
     margin-top: 202px;
     z-index: 1;
+
     @include desktop-only {
       flex-wrap: wrap;
-      flex-direction: row;
       justify-content: space-around;
     }
+
     .restaurant_name {
       display: flex;
       justify-content: space-around;
       align-items: center;
       height: 80px;
       width: 100%;
+
       svg {
         width: 20px;
         height: 20px;
         fill: transparent;
-        stroke: black;
+        stroke: $colour-black;
         stroke-width: 10;
         overflow: visible;
 
@@ -33,9 +36,11 @@
           animation: svg_heart 0.4s linear forwards alternate;
         }
       }
+
       @include tablet-only {
         width: 90%;
       }
+
       @include desktop-only {
         width: 73%;
       }
@@ -47,75 +52,95 @@
       }
 
       15% {
-        fill: #FF79DA;
+        fill: $colour-secondary;
         fill-opacity: .2;
       }
 
       35% {
-        fill: #FF79DA;
+        fill: $colour-secondary;
         fill-opacity: .5;
 
       }
 
       55% {
-        fill: #9356DC;
+        fill: $colour-primary;
         fill-opacity: .2;
 
       }
 
-          75% {
-            fill: #9356DC;
-            fill-opacity: .5;
+      75% {
+        fill: $colour-primary;
+        fill-opacity: .5;
+      }
+
+      100% {
+        fill: url(#svg_gradient);
+      }
+    }
+
+    .articles {
+      width: 97%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include desktop-only {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: flex-start;
+      }
+
+      .article_restaurant {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 92%;
+        margin-bottom: 30px;
+
+        @include tablet-only {
+          width: 82%;
+        }
+
+        @include desktop-only {
+          width: 30%;
+          align-items: center;
+          justify-content: flex-start;
+        }
+
+        .animate {
+          animation: animation-name .75s cubic-bezier(.26, .53, .74, 1.48) .5s backwards;
+        }
+
+        .slide {
+          animation-name: animate-slide;
+        }
+
+
+        @keyframes animate-slide {
+          0% {
+            opacity: 0;
+            transform: translate(0, 40px);
           }
 
           100% {
-            fill: url(#svg_gradient);
+            opacity: 1;
+            transform: translate(0, 0);
           }
         }
 
-    .article_restaurant {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 92%;
-      margin-bottom: 30px;
-
-      @include tablet-only {
-          width: 82%;
-      }
-      @include desktop-only {
-        width: 30%;
-        align-items: center;
-      }
-      .animate {
-          animation: animation-name .75s cubic-bezier(.26, .53, .74, 1.48) .5s backwards;
+        .delay-13 {
+          animation-delay: 0.9s;
         }
-      .slide {
-          animation-name: animate-slide;
-      }
 
-
-      @keyframes animate-slide {
-        0% {
-          opacity: 0;
-          transform: translate(0, 40px);
+        .line {
+          width: 40px;
+          height: 0px;
+          border-bottom: 3px solid $colour-tertiary;
+          padding-top: 5px;
+          margin-bottom: 8px;
         }
-        100% {
-          opacity: 1;
-          transform: translate(0, 0);
-        }
-      }
-
-      .delay-13 {
-        animation-delay: 0.9s;
-      }
-
-      .line {
-        width: 40px;
-        height: 0px;
-        border-bottom: 3px solid #99E2D0;
-        padding-top: 5px;
-        margin-bottom: 8px;
       }
     }
   }

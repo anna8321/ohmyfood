@@ -1,12 +1,18 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
 h1 {
   font-family: 'shrikhand', cursive;
   font-size: 24px;
   font-weight: 500;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+h2 {
+  @include desktop-only {
+    font-size: 24px;
+  }
 }
 
 h3 {
@@ -15,12 +21,6 @@ h3 {
 
 p {
   font-size: 14px;
-}
-
-h2 {
-  @include desktop-only {
-    font-size: 24px;
-  }
 }
 
 .menu_title {

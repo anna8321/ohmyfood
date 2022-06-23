@@ -6,6 +6,7 @@ footer {
   justify-content: center;
   background-color: rgb(54, 54, 54);
   padding-left: 18px;
+
   @include tablet-only {
     align-items: center;
     padding-left: 0;
@@ -15,9 +16,11 @@ footer {
     width: 30%;
     height: 58px;
     filter: invert(95%) sepia(5%) saturate(18%) hue-rotate(87deg) brightness(104%) contrast(104%);
+
     @include tablet-only {
       width: 22%;
     }
+
     @include desktop-only {
       width: 18%;
     }
@@ -27,6 +30,7 @@ footer {
   .footer_items {
     width: 51%;
     height: 60%;
+
     @include tablet-only {
       height: 40%;
       width: 70%;
@@ -36,24 +40,27 @@ footer {
       flex-wrap: wrap;
 
     }
+
     @include desktop-only {
       height: 40%;
       width: 46%;
     }
+
     a {
       display: flex;
       align-items: center;
       height: 20%;
+
       @include tablet-only {
         width: 40%;
         white-space: nowrap;
       }
 
-    a,
-    a:hover,
-    a:active,
-    a:visited,
-    a:focus {
+      a,
+      a:hover,
+      a:active,
+      a:visited,
+      a:focus {
         text-decoration: none;
         color: $colour-white;
       }
@@ -63,6 +70,7 @@ footer {
         font-size: 13px;
         width: 15%;
       }
+
       p {
         color: $colour-white;
       }

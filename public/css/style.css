@@ -9,24 +9,24 @@
   color: black;
   font-family: 'Roboto', sans-serif; }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; }
+
 h1 {
   font-family: 'shrikhand', cursive;
   font-size: 24px;
   font-weight: 500; }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px; }
+@media screen and (min-width: 992px) {
+  h2 {
+    font-size: 24px; } }
 
 h3 {
   font-size: 15px; }
 
 p {
   font-size: 14px; }
-
-@media screen and (min-width: 992px) {
-  h2 {
-    font-size: 24px; } }
 
 .menu_title {
   font-size: 18px;
@@ -35,11 +35,11 @@ p {
 .main_button {
   width: 69%;
   height: 19%;
-  border-radius: 25px;
-  padding: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 15px;
+  border-radius: 25px;
   color: white;
   border: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -53,11 +53,11 @@ p {
       height: 26%; } }
 
 .steps_button {
+  width: 85%;
+  height: 28%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 85%;
-  height: 28%;
   border-radius: 18px;
   border: none;
   background-color: #f2f2f2;
@@ -177,7 +177,7 @@ p {
         position: absolute;
         top: 5px;
         right: 10px;
-        background: #99e2d0;
+        background: #99E2D0;
         color: green;
         border-radius: 2px;
         font-weight: 700;
@@ -207,7 +207,6 @@ p {
     overflow: visible; }
     .card svg:hover {
       stroke: none;
-      transform-origin: bott;
       animation: svg_heart 0.4s linear forwards alternate; }
 
 @keyframes svg_heart {
@@ -231,7 +230,8 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%; }
+  width: 100%;
+  margin-top: 5px; }
   .menu_cards .menu_card {
     width: 100%;
     display: flex;
@@ -241,6 +241,31 @@ p {
     overflow: hidden;
     position: relative;
     margin-bottom: 10px; }
+    .menu_cards .menu_card p {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 84%; }
+    .menu_cards .menu_card .menu_card_content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      border-radius: 0 10px 10px 0;
+      height: 100%;
+      padding: 5px 10px; }
+      .menu_cards .menu_card .menu_card_content .menu_card_description {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3px;
+        width: 100%;
+        transition: all 0.6s ease-in-out; }
+        .menu_cards .menu_card .menu_card_content .menu_card_description span {
+          width: 16%;
+          font-size: 15px;
+          transition: transform 1s;
+          text-align: right;
+          background-color: white; }
     .menu_cards .menu_card:hover .check {
       transform: translate(-120%);
       background-color: #99E2D0;
@@ -257,30 +282,8 @@ p {
         transition: transform 0.6s ease-in-out;
         position: absolute;
         left: 15px; }
-    .menu_cards .menu_card .menu_card_content {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 100%;
-      border-radius: 0 10px 10px 0;
-      height: 100%;
-      padding: 5px 10px; }
-      .menu_cards .menu_card .menu_card_content p {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis; }
-      .menu_cards .menu_card .menu_card_content .menu_card_description {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 3px; }
-        .menu_cards .menu_card .menu_card_content .menu_card_description span {
-          font-size: 15px;
-          transform: translate(0);
-          transition: transform 1s;
-          background-color: white; }
-        .menu_cards .menu_card .menu_card_content .menu_card_description:hover span {
-          transform: translate(-200%);
-          background-color: white; }
+    .menu_cards .menu_card:hover .menu_card_description {
+      width: 84%; }
     .menu_cards .menu_card .check {
       display: flex;
       justify-content: center;
@@ -291,12 +294,23 @@ p {
       right: -72px; }
 
 .banner {
-  background-image: url(../../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   height: 230px;
   background-size: cover;
   position: absolute;
   top: 0px;
   width: 100%; }
+
+.gout {
+  background-image: url(../../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg); }
+
+.note {
+  background-image: url(../../assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg); }
+
+.francaise {
+  background-image: url(../../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg); }
+
+.delice {
+  background-image: url(../../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg); }
 
 /* home */
 header {
@@ -335,8 +349,7 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-color: aliceblue; }
+  justify-content: center; }
 
 footer {
   width: 100%;
@@ -398,7 +411,7 @@ footer {
         color: white; }
 
 .loader {
-  background-color: #fff;
+  background-color: white;
   border-radius: 20px;
   opacity: 0.9;
   position: fixed;
@@ -607,7 +620,6 @@ footer {
     @media screen and (min-width: 992px) {
       .main_restaurant .menu {
         flex-wrap: wrap;
-        flex-direction: row;
         justify-content: space-around; } }
     .main_restaurant .menu .restaurant_name {
       display: flex;
@@ -648,23 +660,36 @@ footer {
     fill-opacity: .5; }
   100% {
     fill: url(#svg_gradient); } }
-    .main_restaurant .menu .article_restaurant {
+    .main_restaurant .menu .articles {
+      width: 97%;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      width: 92%;
-      margin-bottom: 30px; }
-      @media screen and (min-width: 600px) {
-        .main_restaurant .menu .article_restaurant {
-          width: 82%; } }
+      align-items: center; }
       @media screen and (min-width: 992px) {
-        .main_restaurant .menu .article_restaurant {
-          width: 30%;
-          align-items: center; } }
-      .main_restaurant .menu .article_restaurant .animate {
-        animation: animation-name 0.75s cubic-bezier(0.26, 0.53, 0.74, 1.48) 0.5s backwards; }
-      .main_restaurant .menu .article_restaurant .slide {
-        animation-name: animate-slide; }
+        .main_restaurant .menu .articles {
+          display: flex;
+          width: 90%;
+          justify-content: space-between;
+          flex-direction: row;
+          align-items: flex-start; } }
+      .main_restaurant .menu .articles .article_restaurant {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 92%;
+        margin-bottom: 30px; }
+        @media screen and (min-width: 600px) {
+          .main_restaurant .menu .articles .article_restaurant {
+            width: 82%; } }
+        @media screen and (min-width: 992px) {
+          .main_restaurant .menu .articles .article_restaurant {
+            width: 30%;
+            align-items: center;
+            justify-content: flex-start; } }
+        .main_restaurant .menu .articles .article_restaurant .animate {
+          animation: animation-name 0.75s cubic-bezier(0.26, 0.53, 0.74, 1.48) 0.5s backwards; }
+        .main_restaurant .menu .articles .article_restaurant .slide {
+          animation-name: animate-slide; }
 @keyframes animate-slide {
   0% {
     opacity: 0;
@@ -672,13 +697,13 @@ footer {
   100% {
     opacity: 1;
     transform: translate(0, 0); } }
-      .main_restaurant .menu .article_restaurant .delay-13 {
-        animation-delay: 0.9s; }
-      .main_restaurant .menu .article_restaurant .line {
-        width: 40px;
-        height: 0px;
-        border-bottom: 3px solid #99E2D0;
-        padding-top: 5px;
-        margin-bottom: 8px; }
+        .main_restaurant .menu .articles .article_restaurant .delay-13 {
+          animation-delay: 0.9s; }
+        .main_restaurant .menu .articles .article_restaurant .line {
+          width: 40px;
+          height: 0px;
+          border-bottom: 3px solid #99E2D0;
+          padding-top: 5px;
+          margin-bottom: 8px; }
 
 /*# sourceMappingURL=style.css.map */
