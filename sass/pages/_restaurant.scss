@@ -70,32 +70,27 @@
       width: 92%;
       margin-bottom: 30px;
       .animate {
-
-          /* shorthand version: */
           animation: animation-name .75s cubic-bezier(.26, .53, .74, 1.48) .5s backwards;
         }
-
-        /* Pop In */
-        /* Slide In */
-        .slide {
+      .slide {
           animation-name: animate-slide;
-        }
+      }
 
-        @keyframes animate-slide {
-          0% {
-            opacity: 0;
-            transform: translate(0, 40px);
-          }
-
-          100% {
-            opacity: 1;
-            transform: translate(0, 0);
-          }
+      @keyframes animate-slide {
+        0% {
+          opacity: 0;
+          transform: translate(0, 40px);
         }
-
-        .delay-13 {
-          animation-delay: 3.9s;
+        100% {
+          opacity: 1;
+          transform: translate(0, 0);
         }
+      }
+
+      .delay-13 {
+        animation-delay: 0.9s;
+      }
+
       .line {
         width: 40px;
         height: 0px;
