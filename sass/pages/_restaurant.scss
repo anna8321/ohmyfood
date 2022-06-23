@@ -9,6 +9,11 @@
     width: 100%;
     margin-top: 202px;
     z-index: 1;
+    @include desktop-only {
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+    }
     .restaurant_name {
       display: flex;
       justify-content: space-around;
@@ -25,9 +30,14 @@
 
         &:hover {
           stroke: none;
-          transform-origin: bott;
           animation: svg_heart 0.4s linear forwards alternate;
         }
+      }
+      @include tablet-only {
+        width: 90%;
+      }
+      @include desktop-only {
+        width: 73%;
       }
     }
 
@@ -69,12 +79,21 @@
       justify-content: space-between;
       width: 92%;
       margin-bottom: 30px;
+
+      @include tablet-only {
+          width: 82%;
+      }
+      @include desktop-only {
+        width: 30%;
+        align-items: center;
+      }
       .animate {
           animation: animation-name .75s cubic-bezier(.26, .53, .74, 1.48) .5s backwards;
         }
       .slide {
           animation-name: animate-slide;
       }
+
 
       @keyframes animate-slide {
         0% {

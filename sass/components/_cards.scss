@@ -135,13 +135,14 @@
   justify-content: space-between;
   width: 100%;
   .menu_card {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+    margin-bottom: 10px;
     &:hover .check {
       transform: translate(-120%);
       background-color: #99E2D0;

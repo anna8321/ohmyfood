@@ -11,9 +11,8 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   background: linear-gradient(-12deg, $colour-primary, $colour-secondary);
   &:hover {
-    box-shadow: 0 5px 2px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(-12deg, $colour-primary, $colour-secondary);
-    opacity: 0.4;
+    box-shadow: 3px 5px 15px rgba(0, 0, 0,  0.7);
+    opacity: 0.9;
   }
   @include desktop-only {
     width: 55%;
@@ -95,4 +94,10 @@
 .order_button {
   align-self: center;
   margin-bottom: 40px;
+  @include tablet-only {
+      width: 35%;
+    }
+  @include desktop-only {
+    width: 20%;
+  }
 }

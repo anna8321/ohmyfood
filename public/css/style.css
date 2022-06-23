@@ -11,7 +11,8 @@
 
 h1 {
   font-family: 'shrikhand', cursive;
-  font-size: 24px; }
+  font-size: 24px;
+  font-weight: 500; }
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -44,9 +45,8 @@ p {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   background: linear-gradient(-12deg, #9356DC, #FF79DA); }
   .main_button:hover {
-    box-shadow: 0 5px 2px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(-12deg, #9356DC, #FF79DA);
-    opacity: 0.4; }
+    box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.7);
+    opacity: 0.9; }
   @media screen and (min-width: 992px) {
     .main_button {
       width: 55%;
@@ -118,6 +118,12 @@ p {
 .order_button {
   align-self: center;
   margin-bottom: 40px; }
+  @media screen and (min-width: 600px) {
+    .order_button {
+      width: 35%; } }
+  @media screen and (min-width: 992px) {
+    .order_button {
+      width: 20%; } }
 
 .card {
   width: 90%;
@@ -227,13 +233,14 @@ p {
   justify-content: space-between;
   width: 100%; }
   .menu_cards .menu_card {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     overflow: hidden;
-    position: relative; }
+    position: relative;
+    margin-bottom: 10px; }
     .menu_cards .menu_card:hover .check {
       transform: translate(-120%);
       background-color: #99E2D0;
@@ -597,6 +604,11 @@ footer {
     width: 100%;
     margin-top: 202px;
     z-index: 1; }
+    @media screen and (min-width: 992px) {
+      .main_restaurant .menu {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around; } }
     .main_restaurant .menu .restaurant_name {
       display: flex;
       justify-content: space-around;
@@ -612,8 +624,13 @@ footer {
         overflow: visible; }
         .main_restaurant .menu .restaurant_name svg:hover {
           stroke: none;
-          transform-origin: bott;
           animation: svg_heart 0.4s linear forwards alternate; }
+      @media screen and (min-width: 600px) {
+        .main_restaurant .menu .restaurant_name {
+          width: 90%; } }
+      @media screen and (min-width: 992px) {
+        .main_restaurant .menu .restaurant_name {
+          width: 73%; } }
 @keyframes svg_heart {
   0% {
     fill: transparent; }
@@ -637,6 +654,13 @@ footer {
       justify-content: space-between;
       width: 92%;
       margin-bottom: 30px; }
+      @media screen and (min-width: 600px) {
+        .main_restaurant .menu .article_restaurant {
+          width: 82%; } }
+      @media screen and (min-width: 992px) {
+        .main_restaurant .menu .article_restaurant {
+          width: 30%;
+          align-items: center; } }
       .main_restaurant .menu .article_restaurant .animate {
         animation: animation-name 0.75s cubic-bezier(0.26, 0.53, 0.74, 1.48) 0.5s backwards; }
       .main_restaurant .menu .article_restaurant .slide {
