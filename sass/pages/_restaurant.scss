@@ -18,63 +18,44 @@
 
     .restaurant_name {
       display: flex;
-      justify-content: space-around;
+      justify-content: flex-start;
       align-items: center;
       height: 80px;
-      width: 100%;
+      width: 90%;
 
-      svg {
-        width: 20px;
-        height: 20px;
-        fill: transparent;
-        stroke: $colour-black;
-        stroke-width: 10;
-        overflow: visible;
+      i {
+        font-size: 20px;
+        position: absolute;
+        right: 30px;
+
+        @include tablet-only {
+          right: 80px;
+        }
+
+        @include desktop-only {
+          right: 80px;
+        }
+      }
+
+      .fa-solid {
+        color: transparent;
+        background-image: linear-gradient(-12deg, $colour-primary, $colour-secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
 
         &:hover {
-          stroke: none;
-          animation: svg_heart 0.4s linear forwards alternate;
+          opacity: 1;
+          animation: heart_anim 0.4s linear forwards alternate;
         }
       }
 
       @include tablet-only {
-        width: 90%;
+        width: 80%;
       }
 
       @include desktop-only {
         width: 73%;
-      }
-    }
-
-    @keyframes svg_heart {
-      0% {
-        fill: transparent;
-      }
-
-      15% {
-        fill: $colour-secondary;
-        fill-opacity: .2;
-      }
-
-      35% {
-        fill: $colour-secondary;
-        fill-opacity: .5;
-
-      }
-
-      55% {
-        fill: $colour-primary;
-        fill-opacity: .2;
-
-      }
-
-      75% {
-        fill: $colour-primary;
-        fill-opacity: .5;
-      }
-
-      100% {
-        fill: url(#svg_gradient);
       }
     }
 
@@ -110,11 +91,26 @@
         }
 
         .animate {
+          -webkit-animation: animation-name .75s cubic-bezier(.26, .53, .74, 1.48) .5s backwards;
           animation: animation-name .75s cubic-bezier(.26, .53, .74, 1.48) .5s backwards;
         }
 
         .slide {
+          -webkit-animation-name: animate-slide;
           animation-name: animate-slide;
+        }
+
+
+        @-webkit-keyframes animate-slide {
+          0% {
+            opacity: 0;
+            transform: translate(0, 40px);
+          }
+
+          100% {
+            opacity: 1;
+            transform: translate(0, 0);
+          }
         }
 
 
@@ -131,6 +127,7 @@
         }
 
         .delay-13 {
+          -webkit-animation-delay: 0.9s;
           animation-delay: 0.9s;
         }
 
@@ -143,5 +140,37 @@
         }
       }
     }
+  }
+}
+
+@keyframes heart_anim {
+  0% {
+    color: transparent;
+  }
+
+  15% {
+    color: $colour-secondary;
+    opacity: .2;
+  }
+
+  35% {
+    color: $colour-secondary;
+    opacity: .5;
+
+  }
+
+  55% {
+    color: $colour-primary;
+    opacity: .2;
+
+  }
+
+  75% {
+    color: $colour-primary;
+    opacity: .5;
+  }
+
+  100% {
+    background-image: linear-gradient(-12deg, $colour-primary, $colour-secondary);
   }
 }
