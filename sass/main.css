@@ -145,8 +145,8 @@ p {
 
 @media screen and (min-width: 600px) {
   .steps_button p {
-    padding-left: 20px;
-    width: 81%;
+    padding-left: 12px;
+    width: 50%;
   }
 }
 

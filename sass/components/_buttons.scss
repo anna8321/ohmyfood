@@ -75,12 +75,13 @@
     font-family: 'Roboto', sans-serif;
 
     @include tablet-only {
-      padding-left: 20px;
-      width: 81%;
+      padding-left: 12px;
+      width: 60%;
     }
 
     @include desktop-only {
       font-size: 16px;
+      width: 70%;
     }
   }
 
