@@ -39,7 +39,7 @@
 
       .fa-solid {
         color: transparent;
-        background-image: linear-gradient(-12deg, $colour-primary, $colour-secondary);
+        background-image: $gradient;
         background-clip: text;
         -webkit-background-clip: text;
         opacity: 0;
@@ -171,6 +171,6 @@
   }
 
   100% {
-    background-image: linear-gradient(-12deg, $colour-primary, $colour-secondary);
+    background-image: $gradient;
   }
 }

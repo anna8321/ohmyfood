@@ -9,7 +9,7 @@
   color: $colour-white;
   border: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(-12deg, $colour-primary, $colour-secondary);
+  background: $gradient;
 
   &:hover {
     box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.7);
