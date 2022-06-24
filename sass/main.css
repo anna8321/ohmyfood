@@ -35,6 +35,11 @@ p {
   font-size: 14px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .menu_title {
   font-size: 18px;
   font-weight: 500;
@@ -146,13 +151,14 @@ p {
 @media screen and (min-width: 600px) {
   .steps_button p {
     padding-left: 12px;
-    width: 50%;
+    width: 60%;
   }
 }
 
 @media screen and (min-width: 992px) {
   .steps_button p {
     font-size: 16px;
+    width: 70%;
   }
 }
 
@@ -312,72 +318,74 @@ p {
   padding: 2px 10px;
 }
 
-.card svg {
-  width: 20px;
-  height: 20px;
-  fill: transparent;
-  stroke: black;
-  stroke-width: 10;
-  z-index: 9999;
+.card i {
+  font-size: 20px;
   position: absolute;
   bottom: 20px;
   right: 20px;
-  overflow: visible;
 }
 
-.card svg:hover {
-  stroke: none;
-  -webkit-animation: svg_heart 0.4s linear forwards alternate;
-          animation: svg_heart 0.4s linear forwards alternate;
+.card .fa-solid {
+  color: transparent;
+  background-image: linear-gradient(-12deg, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
 }
 
-@-webkit-keyframes svg_heart {
+.card .fa-solid:hover {
+  opacity: 1;
+  -webkit-animation: heart_anim 0.4s linear forwards alternate;
+          animation: heart_anim 0.4s linear forwards alternate;
+}
+
+@-webkit-keyframes heart_anim {
   0% {
-    fill: transparent;
+    color: transparent;
   }
   15% {
-    fill: #FF79DA;
-    fill-opacity: .2;
+    color: #FF79DA;
+    opacity: .2;
   }
   35% {
-    fill: #FF79DA;
-    fill-opacity: .5;
+    color: #FF79DA;
+    opacity: .5;
   }
   55% {
-    fill: #9356DC;
-    fill-opacity: .2;
+    color: #9356DC;
+    opacity: .2;
   }
   75% {
-    fill: #9356DC;
-    fill-opacity: .5;
+    color: #9356DC;
+    opacity: .5;
   }
   100% {
-    fill: url(#svg_gradient);
+    background-image: linear-gradient(-12deg, #9356DC, #FF79DA);
   }
 }
 
-@keyframes svg_heart {
+@keyframes heart_anim {
   0% {
-    fill: transparent;
+    color: transparent;
   }
   15% {
-    fill: #FF79DA;
-    fill-opacity: .2;
+    color: #FF79DA;
+    opacity: .2;
   }
   35% {
-    fill: #FF79DA;
-    fill-opacity: .5;
+    color: #FF79DA;
+    opacity: .5;
   }
   55% {
-    fill: #9356DC;
-    fill-opacity: .2;
+    color: #9356DC;
+    opacity: .2;
   }
   75% {
-    fill: #9356DC;
-    fill-opacity: .5;
+    color: #9356DC;
+    opacity: .5;
   }
   100% {
-    fill: url(#svg_gradient);
+    background-image: linear-gradient(-12deg, #9356DC, #FF79DA);
   }
 }
 
@@ -447,6 +455,12 @@ p {
   width: 100%;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
+}
+
+@media screen and (min-width: 992px) {
+  .menu_cards .menu_card .menu_card_content .menu_card_description {
+    width: 90%;
+  }
 }
 
 .menu_cards .menu_card .menu_card_content .menu_card_description span {
@@ -1136,64 +1150,57 @@ footer .footer_items a p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: 80px;
-  width: 100%;
+  width: 90%;
 }
 
-.main_restaurant .menu .restaurant_name svg {
-  width: 20px;
-  height: 20px;
-  fill: transparent;
-  stroke: black;
-  stroke-width: 10;
-  overflow: visible;
+.main_restaurant .menu .restaurant_name i {
+  font-size: 20px;
+  position: absolute;
+  right: 30px;
 }
 
-.main_restaurant .menu .restaurant_name svg:hover {
-  stroke: none;
-  -webkit-animation: svg_heart 0.4s linear forwards alternate;
-          animation: svg_heart 0.4s linear forwards alternate;
+@media screen and (min-width: 600px) {
+  .main_restaurant .menu .restaurant_name i {
+    right: 80px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .main_restaurant .menu .restaurant_name i {
+    right: 80px;
+  }
+}
+
+.main_restaurant .menu .restaurant_name .fa-solid {
+  color: transparent;
+  background-image: linear-gradient(-12deg, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+}
+
+.main_restaurant .menu .restaurant_name .fa-solid:hover {
+  opacity: 1;
+  -webkit-animation: heart_anim 0.4s linear forwards alternate;
+          animation: heart_anim 0.4s linear forwards alternate;
 }
 
 @media screen and (min-width: 600px) {
   .main_restaurant .menu .restaurant_name {
-    width: 90%;
+    width: 80%;
   }
 }
 
 @media screen and (min-width: 992px) {
   .main_restaurant .menu .restaurant_name {
     width: 73%;
-  }
-}
-
-@keyframes svg_heart {
-  0% {
-    fill: transparent;
-  }
-  15% {
-    fill: #FF79DA;
-    fill-opacity: .2;
-  }
-  35% {
-    fill: #FF79DA;
-    fill-opacity: .5;
-  }
-  55% {
-    fill: #9356DC;
-    fill-opacity: .2;
-  }
-  75% {
-    fill: #9356DC;
-    fill-opacity: .5;
-  }
-  100% {
-    fill: url(#svg_gradient);
   }
 }
 
@@ -1265,12 +1272,12 @@ footer .footer_items a p {
 
 .main_restaurant .menu .articles .article_restaurant .animate {
   -webkit-animation: animation-name 0.75s cubic-bezier(0.26, 0.53, 0.74, 1.48) 0.5s backwards;
-          animation: animation-name 0.75s cubic-bezier(0.26, 0.53, 0.74, 1.48) 0.5s backwards;
+  animation: animation-name 0.75s cubic-bezier(0.26, 0.53, 0.74, 1.48) 0.5s backwards;
 }
 
 .main_restaurant .menu .articles .article_restaurant .slide {
   -webkit-animation-name: animate-slide;
-          animation-name: animate-slide;
+  animation-name: animate-slide;
 }
 
 @-webkit-keyframes animate-slide {
@@ -1301,7 +1308,7 @@ footer .footer_items a p {
 
 .main_restaurant .menu .articles .article_restaurant .delay-13 {
   -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
+  animation-delay: 0.9s;
 }
 
 .main_restaurant .menu .articles .article_restaurant .line {
@@ -1310,5 +1317,30 @@ footer .footer_items a p {
   border-bottom: 3px solid #99E2D0;
   padding-top: 5px;
   margin-bottom: 8px;
+}
+
+@keyframes heart_anim {
+  0% {
+    color: transparent;
+  }
+  15% {
+    color: #FF79DA;
+    opacity: .2;
+  }
+  35% {
+    color: #FF79DA;
+    opacity: .5;
+  }
+  55% {
+    color: #9356DC;
+    opacity: .2;
+  }
+  75% {
+    color: #9356DC;
+    opacity: .5;
+  }
+  100% {
+    background-image: linear-gradient(-12deg, #9356DC, #FF79DA);
+  }
 }
 /*# sourceMappingURL=main.css.map */
