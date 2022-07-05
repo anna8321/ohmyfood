@@ -226,6 +226,8 @@
     }
 
     .check {
+      width: 55px;
+      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -233,6 +235,15 @@
       transition: transform 1s;
       position: absolute;
       right: -72px;
+      background-color: $colour-tertiary;
+      border-radius: 0 10px 10px 0;
+
+      i {
+        color: $colour-white;
+        font-size: 20px;
+        position: absolute;
+        left: 15px;
+      }
     }
   }
 }
